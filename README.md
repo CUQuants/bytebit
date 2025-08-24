@@ -1,34 +1,6 @@
 # ByteBit
 ByteBit is a robust Python application that streams real-time orderbook and trade data from Kraken's WebSocket API. Built by CU Quants for researchers, traders, and analysts who need reliable, continuous market data collection.
 
-# Features
-* Real-time streaming
-* Organized storage
-* Auto-recovery
-* Easily view and search data
-* Flexible configuration
-* Time-based / websocket-based collection
-* Multiple markets
-
-# Install Guide
-1. Install dependecies
-```bash
-pip install -r requirements.txt
-```
-
-2. Create the config.yaml and confiure it
-```bash
-cp config.yaml example config.yaml
-```
-
-3. Start collecting data
-```bash
-python src/main.py
-```
-
-# Config Guide
-Did not write
-
 # Data Structure
 ## Example:
 ```bash
