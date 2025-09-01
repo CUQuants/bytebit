@@ -121,7 +121,7 @@ class TidePoolRunner:
     def stop(self):
         """Stop the runner (called by signal handler)"""
         logger.info("Stop signal received")
-        self.should_restart = False
+        sys.exit(0)
 
 # Global runner instance for signal handling
 runner_instance: Optional[TidePoolRunner] = None

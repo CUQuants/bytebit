@@ -1,11 +1,5 @@
 asyncio
-kraken_api
-yaml
+pyaml
 logging
-signal
-sys
-os
-csv
-datetime
-typing
-pathlib
+websockets
+aiohttp
