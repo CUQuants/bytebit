@@ -1,4 +1,4 @@
-# ByteBit
+# TidePool
 ByteBit is a robust Python application that streams real-time orderbook and trade data from Kraken's WebSocket API. Built by CU Quants for researchers, traders, and analysts who need reliable, continuous market data collection.
 
 # Data Structure
