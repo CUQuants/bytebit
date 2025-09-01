@@ -1,0 +1,54 @@
+# TidePool Data Collector Configuration
+
+# Market pairs to collect data from
+# Use Kraken's pair notation (e.g., BTC/USD, ETH/USD)
+markets:
+  - EUR/USD
+  - EURQ/USD
+  - EURQ/EUR
+  - EURR/USD
+  - EURR/EUR
+  - USDQ/USD
+  - USDQ/EUR
+  - USDD/USD
+  - USDD/EUR
+  - PYUSD/USD
+  - PYUSD/EUR
+  - TUSD/USD
+  - TUSD/EUR
+  - USDT/USD
+  - USDC/USD
+  - USDC/EUR
+  - USDT/EUR
+
+# Restart configuration
+restart_delay: 5  # seconds to wait before restarting after crash
+
+# Logging configuration
+log_level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+logging:
+  file: tidepool.log
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+
+# Data storage configuration
+data:
+  output_directory: data/markets/orderbook
+  file_rotation: 24h  # Create new file every 24 hours
+  max_rows_per_file: 1000  # Maximum rows per CSV file (if implementing rotation)
+
+# Kraken WebSocket configuration (optional)
+kraken:
+  # Add any Kraken-specific settings here
+  reconnect_interval: 30  # seconds
+  heartbeat_timeout: 60   # seconds
+
+# Performance settings
+performance:
+  buffer_size: 1000      # Internal buffer size for data
+  flush_interval: 5      # seconds between file flushes
+  
+# Monitoring (future feature)
+monitoring:
+  enabled: false
+  prometheus_port: 8000
+  health_check_port: 8001

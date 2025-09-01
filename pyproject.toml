@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tidepool"
+version = "0.1.0"
+description = "Real-time orderbook and trade data collector for the TidePool dataset"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "CU Quants", email = "cuquants@colorado.edu"}
+]
